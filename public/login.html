@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Admin | RuxxCluster</title>
+
+  <link rel="stylesheet" href="css/admin.css">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body class="login-page">
+
+<div class="login-container">
+  <div class="login-card">
+
+    <h1 class="login-title">
+      <span class="glow">Ruxx</span>Cluster
+    </h1>
+    <p class="login-subtitle">Panel Administrativo</p>
+
+    <form id="loginForm">
+      <div class="input-group">
+        <i class="fa-solid fa-user"></i>
+        <input type="text" name="username" placeholder="Usuario" required>
+      </div>
+
+      <div class="input-group">
+        <i class="fa-solid fa-lock"></i>
+        <input type="password" name="clave" placeholder="Contraseña" required>
+      </div>
+
+      <button type="submit" class="login-btn">
+        Iniciar sesión
+      </button>
+    </form>
+
+    <p id="error" class="login-error"></p>
+
+  </div>
+</div>
+
+<script src="js/login.js"></script>
+</body>
+</html>

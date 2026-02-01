@@ -1,0 +1,275 @@
+/* BASE */
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  background: #0b0f19;
+  color: #e5e7eb;
+}
+
+/* HEADER */
+.admin-header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+
+  background: rgba(2, 6, 23, 0.85);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(99,102,241,.15);
+
+  padding: 1rem 1.5rem;
+}
+
+.admin-header h1 {
+  margin: 0;
+  font-size: 1.4rem;
+  color: #c7d2fe;
+}
+
+/* CONTAINER */
+.admin-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 2rem 1rem;
+}
+
+/* CARD CONTENEDORA */
+.table-card {
+  background: rgba(17, 24, 39, 0.85);
+  border: 1px solid rgba(99,102,241,.15);
+  border-radius: 14px;
+  overflow-x: auto;
+
+  box-shadow: 0 20px 60px rgba(0,0,0,.6);
+}
+
+/* TABLE */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 700px;
+}
+
+thead {
+  background: rgba(99,102,241,.08);
+}
+
+th, td {
+  padding: .75rem 1rem;
+  text-align: left;
+  white-space: nowrap;
+}
+
+th {
+  font-size: .8rem;
+  letter-spacing: .05em;
+  text-transform: uppercase;
+  color: #c7d2fe;
+}
+
+td {
+  font-size: .9rem;
+  color: #e5e7eb;
+  border-top: 1px solid rgba(255,255,255,.05);
+}
+
+/* ROW HOVER */
+tbody tr:hover {
+  background: rgba(99,102,241,.08);
+}
+
+/* ESTADO BADGES */
+td.estado {
+  font-weight: 600;
+}
+
+.estado.nueva {
+  color: #22d3ee;
+}
+
+.estado.revisada {
+  color: #facc15;
+}
+
+.estado.respondida {
+  color: #4ade80;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .admin-header h1 {
+    font-size: 1.2rem;
+  }
+
+  .admin-container {
+    padding: 1.2rem .8rem;
+  }
+}
+
+/* NAVBAR ADMIN */
+.admin-navbar {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+
+  background: rgba(2, 6, 23, 0.85);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(99,102,241,.15);
+}
+
+.admin-nav-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: .9rem 1.2rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.admin-nav-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #c7d2fe;
+}
+
+/* BOTÓN LOGOUT */
+.admin-logout-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: .4rem;
+
+  padding: .4rem .9rem;
+  font-size: .85rem;
+
+  background: rgba(239, 68, 68, .15);
+  color: #fecaca;
+
+  border: 1px solid rgba(239, 68, 68, .35);
+  border-radius: 999px;
+
+  cursor: pointer;
+  transition: background .3s, box-shadow .3s;
+}
+
+.admin-logout-btn:hover {
+  background: rgba(239, 68, 68, .25);
+  box-shadow: 0 0 0 1px rgba(239, 68, 68, .5);
+}
+
+/* LOGIN PAGE */
+.login-page {
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at top, rgba(99,102,241,.15), transparent 60%),
+    linear-gradient(180deg, #020617, #0b0f19);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* CONTENEDOR */
+.login-container {
+  width: 100%;
+  padding: 1rem;
+}
+
+/* CARD */
+.login-card {
+  max-width: 380px;
+  margin: auto;
+
+  background: rgba(17, 24, 39, 0.75);
+  backdrop-filter: blur(12px);
+
+  border: 1px solid rgba(99,102,241,.25);
+  border-radius: 18px;
+
+  padding: 2.5rem 2rem;
+  text-align: center;
+
+  box-shadow: 0 25px 70px rgba(0,0,0,.65);
+}
+
+/* TITULOS */
+.login-title {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.login-subtitle {
+  margin-top: .3rem;
+  margin-bottom: 2rem;
+  font-size: .9rem;
+  color: #9ca3af;
+}
+
+/* INPUTS */
+.input-group {
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.input-group i {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  color: #9ca3af;
+}
+
+.input-group input {
+  width: 100%;
+  padding: .7rem .7rem .7rem 2.2rem;
+
+  background: #020617;
+  border: 1px solid #1f2937;
+  border-radius: 8px;
+
+  color: #e5e7eb;
+  font-size: .95rem;
+}
+
+.input-group input:focus {
+  outline: none;
+  border-color: #6366f1;
+}
+
+/* BOTÓN */
+.login-btn {
+  width: 100%;
+  margin-top: .5rem;
+  padding: .7rem;
+
+  background: #6366f1;
+  color: white;
+  border: none;
+  border-radius: 999px;
+
+  font-size: .9rem;
+  cursor: pointer;
+  transition: background .3s, box-shadow .3s;
+}
+
+.login-btn:hover {
+  background: #4f46e5;
+  box-shadow: 0 0 0 1px rgba(99,102,241,.6);
+}
+
+/* ERROR */
+.login-error {
+  margin-top: 1rem;
+  font-size: .85rem;
+  color: #f87171;
+}
+
+/* RESPONSIVE */
+@media (max-width: 480px) {
+  .login-card {
+    padding: 2rem 1.5rem;
+  }
+
+  .login-title {
+    font-size: 1.8rem;
+  }
+}

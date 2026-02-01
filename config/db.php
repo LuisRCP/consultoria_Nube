@@ -20,3 +20,5 @@ try {
     echo json_encode(['error' => 'Error de conexión']);
     exit;
 }
+echo password_hash('admin123', PASSWORD_DEFAULT);
+
