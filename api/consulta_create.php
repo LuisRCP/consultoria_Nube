@@ -34,8 +34,8 @@ try {
     $mail->isSMTP();
     $mail->Host = 'smtp.hostinger.com';
     $mail->SMTPAuth = true;
-    $mail->Username = 'soporteLRCP@ruxxcluster.online';
-    $mail->Password = '4yd+K@F|f';
+    $mail->Username = 'AQUI_VA_EL_CORREO';
+    $mail->Password = 'CONTRASEÑA 12345';
     $mail->SMTPSecure = 'tls';
     $mail->Port = 587;
 
